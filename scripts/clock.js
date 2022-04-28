@@ -9,7 +9,7 @@ let dayOfWeek = ['Воскресенье', 'Понедельник', 'Вторн
 function myTimer() {
   let d = new Date();
   let dayOfWeek = getDayWeek();
-  document.querySelector(".clock").innerHTML = `${d.toLocaleTimeString()}<br>${d.getDate()}.${d.getMonth()}.${d.getFullYear()}<br>${dayOfWeek}`;
+  document.querySelector(".clock").innerHTML = d.toLocaleTimeString() + '<br>' + d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear() + '<br>' + dayOfWeek;
 }
 
 //Функция преобразования дня недели из числа в текстовый вид
